@@ -3,12 +3,11 @@
     void main(){
         int n,i=2,j,k=0,x=0;
         scanf("%d",&n);
-        int no[n];
-        while(1){
-            if(i*i*i>n){
-                break;
-            }
+        int no[100];
+        if(n>=1&&n<=1000000){
+            while(i*i*i<=n){
             no[k]=i*i*i;
+            printf("%d  ",no[k]);
             k++;
             i++;
         }
@@ -19,9 +18,11 @@
             }
         }
         if(x!=0){
-            printf("Not Cube Free");
+            //printf("Not Cube Free");
         }
         else{
-            printf("%d",n-k);
+            //printf("%d",n-k);
         }
+        }
+
     }
