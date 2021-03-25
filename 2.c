@@ -8,7 +8,6 @@
         for( i=0 ; i<m ; i++ ){
             for( j=0 ; j<70 ; j++ ){
                 silk[i][j]='o';
-                printf("%c",silk[i][j]);
             }
             printf("\n");
         }
